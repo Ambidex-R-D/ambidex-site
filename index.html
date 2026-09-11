@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-AU">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Ambidex R&D</title>
-<meta name="description" content="Ambidex R&D Pty Ltd — an Australian consumer software studio. We research, validate, and build AI-powered consumer apps.">
+<meta name="description" content="Ambidex R&D Pty Ltd — an Australian software studio. We build products people choose to pay for, from consumer apps to reference data for regulated industries.">
 <style>
   :root { color-scheme: light dark; }
   * { margin: 0; box-sizing: border-box; }
@@ -14,8 +14,17 @@
   @media (prefers-color-scheme: dark) { body { background: #111; color: #eee; } }
   main { max-width: 40rem; }
   h1 { font-size: 2rem; letter-spacing: -0.02em; margin-bottom: 0.75rem; }
+  h2 { font-size: 1.1rem; letter-spacing: -0.01em; margin-bottom: 0.75rem; }
+  h3 { font-size: 1rem; margin-bottom: 0.25rem; }
   p { margin-bottom: 1rem; }
   .muted { opacity: 0.65; font-size: 0.9rem; }
+  .products { list-style: none; }
+  .product { border: 1px solid currentColor; border-radius: 0.5rem; padding: 1rem 1.25rem;
+             margin-bottom: 1rem; border-color: rgba(128, 128, 128, 0.35); }
+  .product p { margin-bottom: 0.5rem; }
+  .product p:last-child { margin-bottom: 0; }
+  .tag { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.06em;
+         opacity: 0.65; margin-left: 0.5rem; font-weight: normal; }
   hr { border: none; border-top: 1px solid currentColor; opacity: 0.15; margin: 1.5rem 0; }
   a { color: inherit; }
 </style>
@@ -23,10 +32,22 @@
 <body>
 <main>
   <h1>Ambidex R&amp;D</h1>
-  <p>Ambidex R&amp;D Pty Ltd is an Australian consumer software studio. We research
-     emerging consumer needs, validate ideas directly with customers, and build
-     AI-powered apps people choose to pay for &mdash; no ads, no gimmicks.</p>
-  <p>Products are announced on their own sites as they launch.</p>
+  <p>Ambidex R&amp;D Pty Ltd is an Australian software studio. We build products
+     people choose to pay for, from consumer apps to reference data for regulated
+     industries &mdash; no ads, no gimmicks.</p>
+
+  <h2>Products</h2>
+  <ul class="products">
+    <li class="product">
+      <h3>OERC &mdash; Offshore Environment Reference Case<span class="tag">Beta</span></h3>
+      <p>Australian offshore environmental and regulatory data your AI agent can
+         query directly, with every answer traceable to its source.</p>
+      <p>Works with Claude, Cursor, ChatGPT and plain HTTP/MCP.</p>
+      <p class="muted"><a href="https://oerc.com.au">oerc.com.au</a> &middot;
+         beta &mdash; not for use in a regulatory submission</p>
+    </li>
+  </ul>
+  <p class="muted">Further products are announced on their own sites as they launch.</p>
   <hr>
   <p class="muted">Ambidex R&amp;D Pty Ltd &middot; ABN 16 696 857 995 &middot; Australia<br>
      Contact: <a href="mailto:hello@ambidex.com.au">hello@ambidex.com.au</a></p>
